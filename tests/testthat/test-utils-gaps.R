@@ -313,6 +313,7 @@ context("findDefinedGaps")
     gaps <- repgen:::findDefinedGaps(timeSeries = timeSeries, timezone = "")
     expect_true(is.null(gaps$startGaps))
     expect_true(is.null(gaps$endGaps))
+    
   })
   
   test_that("time series 'gaps' has incorrectly named columns and throws an error", {
